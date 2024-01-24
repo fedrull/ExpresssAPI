@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .endpoint {
+            margin-bottom: 20px;
+        }
+
+        .endpoint h2 {
+            color: #555;
+        }
+
+        .endpoint p {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>API Documentation</h1>
+
+    <div class="endpoint">
+        <h2>GET/api/resource</h2>
+        <p>Retrieve information about a resource.</p>
+        <code>GET /api/resource</code>
+        <p>Response:</p>
+        <code>{"id": 1, "Username":" Password"}</code>
+    </div>
+
+    <div class="endpoint">
+        <h2>GET /api/resource/{id}</h2>
+        <p>Retrieve information about a resource by ID.</p>
+        <code>GET /api/resource/{id}</code>
+        <p>Response:</p>
+        <code>{"id": 1, "Username":" Password"}</code>
+    </div>
+
+    <div class="endpoint">
+        <h2>POST /api/resource</h2>
+        <p>Create a new resource.</p>
+        <code>POST /api/resource</code>
+        <p>Request:</p>
+        <code>{"Username": "string", "Password": "string"}</code>
+        <p>Response:</p>
+        <code>{"id": 2, "string": "string"}</code>
+    </div>
+
+    <div class="endpoint">
+        <h2>DELETE /api/resource/{id}</h2>
+        <p>Delete a resource by ID.</p>
+        <code>DELETE /api/resource/{id}</code>
+        <p>Response:</p>
+        <code>{"message": "User deleted successfully"}</code>
+    </div>
+
+</body>
+</html>
